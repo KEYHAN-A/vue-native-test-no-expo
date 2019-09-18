@@ -3,6 +3,10 @@ package com.vuenativenoexpo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rnfingerprint.FingerprintAuthPackage;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+import org.reactnative.camera.RNCameraPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
@@ -26,6 +30,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new FingerprintAuthPackage(),
+            new AsyncStoragePackage(),
+            new RNCameraPackage(),
+            new RNDeviceInfo(),
             new VectorIconsPackage(),
             new ReanimatedPackage(),
             new RNGestureHandlerPackage()
