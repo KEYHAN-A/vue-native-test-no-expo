@@ -47,7 +47,7 @@ export default {
       this.username = null;
     },
     authTouch() {
-      TouchID.authenticateü(
+      TouchID.authenticate(
         "to demo this react-native component"        
       )
         .then(success => {
